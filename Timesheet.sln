@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timesheet.Core", "Timesheet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timesheet.Common", "Timesheet.Common\Timesheet.Common.csproj", "{F00E7322-E1E6-4104-B9D9-1855F8577736}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Timesheet.Presentation.Api", "Timesheet.Presentation.Api\Timesheet.Presentation.Api.xproj", "{786C1C7B-1DA0-427C-927B-CAB8AF7C35B2}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Timesheet.Presentation.Web", "Timesheet.Presentation.Web\Timesheet.Presentation.Web.xproj", "{BB8F1915-A0CD-4465-BEE5-6D248916F6E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{F00E7322-E1E6-4104-B9D9-1855F8577736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F00E7322-E1E6-4104-B9D9-1855F8577736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F00E7322-E1E6-4104-B9D9-1855F8577736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786C1C7B-1DA0-427C-927B-CAB8AF7C35B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786C1C7B-1DA0-427C-927B-CAB8AF7C35B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786C1C7B-1DA0-427C-927B-CAB8AF7C35B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786C1C7B-1DA0-427C-927B-CAB8AF7C35B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8F1915-A0CD-4465-BEE5-6D248916F6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8F1915-A0CD-4465-BEE5-6D248916F6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8F1915-A0CD-4465-BEE5-6D248916F6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8F1915-A0CD-4465-BEE5-6D248916F6E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
