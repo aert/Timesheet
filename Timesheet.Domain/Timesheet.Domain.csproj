@@ -46,7 +46,7 @@
     <Compile Include="Entities\Task.cs" />
     <Compile Include="Entities\TeamMember.cs" />
     <Compile Include="Entities\TimeLog.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValueObjects\TimesheetVO.cs" />
   </ItemGroup>
