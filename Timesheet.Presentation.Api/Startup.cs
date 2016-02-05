@@ -39,7 +39,22 @@ namespace Timesheet.Presentation.Api
 
             services.AddMvc();
 
+            //-- Swagger
             services.AddSwaggerGen();
+            services.ConfigureSwaggerDocument(options =>
+            {
+                options.SingleApiVersion(new Info
+                {
+                    Version = "v1",
+                    Title = "Timesheet API",
+                    TermsOfService = "LGPL"
+                });
+            });
+
+            services.ConfigureSwaggerSchema(options =>
+            {
+                options.DescribeAllEnumsAsStrings = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -58,6 +73,7 @@ namespace Timesheet.Presentation.Api
 
             app.UseMvc();
 
+            //-- Swagger
             app.UseSwaggerGen();
             app.UseSwaggerUi();
         }
