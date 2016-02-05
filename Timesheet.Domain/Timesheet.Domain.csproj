@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\IRepository.cs" />
+    <Compile Include="Common\IService.cs" />
     <Compile Include="Repositories\IEmployeeRepository.cs" />
     <Compile Include="Repositories\IProjectRepository.cs" />
     <Compile Include="Repositories\ITaskRepository.cs" />
@@ -53,12 +54,12 @@
     <Compile Include="Entities\TimeLog.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TeamMemberService.cs" />
     <Compile Include="ValueObjects\TimesheetVO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Aggregates\" />
     <Folder Include="Factories\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

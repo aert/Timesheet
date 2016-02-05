@@ -10,43 +10,44 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Timesheet.Tests.Functional.Api.Users
+namespace Timesheet.Tests.Specs_Api.Auth
 {
     using TechTalk.SpecFlow;
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class InOrderToAccessTheSystemAsAUserIMustHaveAccessRightsFeature : Xunit.IClassFixture<InOrderToAccessTheSystemAsAUserIMustHaveAccessRightsFeature.FixtureData>, System.IDisposable
+    [NUnit.Framework.TestFixtureAttribute()]
+    [NUnit.Framework.DescriptionAttribute("In order to access the system, as a user, I must have access rights")]
+    public partial class InOrderToAccessTheSystemAsAUserIMustHaveAccessRightsFeature
     {
         
-        private static TechTalk.SpecFlow.ITestRunner testRunner;
+        private TechTalk.SpecFlow.ITestRunner testRunner;
         
 #line 1 "Login.feature"
 #line hidden
         
-        public InOrderToAccessTheSystemAsAUserIMustHaveAccessRightsFeature()
-        {
-            this.TestInitialize();
-        }
-        
-        public static void FeatureSetup()
+        [NUnit.Framework.TestFixtureSetUpAttribute()]
+        public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "In order to access the system, as a user, I must have access rights", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        public static void FeatureTearDown()
+        [NUnit.Framework.TestFixtureTearDownAttribute()]
+        public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
+        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
+        [NUnit.Framework.TearDownAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -62,21 +63,11 @@ namespace Timesheet.Tests.Functional.Api.Users
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void SetFixture(InOrderToAccessTheSystemAsAUserIMustHaveAccessRightsFeature.FixtureData fixtureData)
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("As an unauthorized user, I can not get an auth token")]
+        public virtual void AsAnUnauthorizedUserICanNotGetAnAuthToken()
         {
-        }
-        
-        void System.IDisposable.Dispose()
-        {
-            this.ScenarioTearDown();
-        }
-        
-        [Xunit.FactAttribute()]
-        [Xunit.TraitAttribute("FeatureTitle", "In order to access the system, as a user, I must have access rights")]
-        [Xunit.TraitAttribute("Description", "As an unauthorized user, I can not login to the system")]
-        public virtual void AsAnUnauthorizedUserICanNotLoginToTheSystem()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As an unauthorized user, I can not login to the system", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As an unauthorized user, I can not get an auth token", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
@@ -89,9 +80,8 @@ testRunner.Then("the system must reply with error 404", ((string)(null)), ((Tech
             this.ScenarioCleanup();
         }
         
-        [Xunit.FactAttribute()]
-        [Xunit.TraitAttribute("FeatureTitle", "In order to access the system, as a user, I must have access rights")]
-        [Xunit.TraitAttribute("Description", "As an authorized user, I can login to the system")]
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("As an authorized user, I can login to the system")]
         public virtual void AsAnAuthorizedUserICanLoginToTheSystem()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As an authorized user, I can login to the system", ((string[])(null)));
@@ -99,22 +89,6 @@ testRunner.Then("the system must reply with error 404", ((string)(null)), ((Tech
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
-        }
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.0.0.0")]
-        [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        public class FixtureData : System.IDisposable
-        {
-            
-            public FixtureData()
-            {
-                InOrderToAccessTheSystemAsAUserIMustHaveAccessRightsFeature.FeatureSetup();
-            }
-            
-            void System.IDisposable.Dispose()
-            {
-                InOrderToAccessTheSystemAsAUserIMustHaveAccessRightsFeature.FeatureTearDown();
-            }
         }
     }
 }
