@@ -1,4 +1,4 @@
-﻿namespace Timesheet.Presentation.Api.ApiModels.Auth
+﻿namespace Timesheet.Presentation.Api.Models.Auth
 {
     public class Login
     {

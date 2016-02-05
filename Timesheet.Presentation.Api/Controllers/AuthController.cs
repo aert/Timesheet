@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNet.Mvc;
-using Timesheet.Presentation.Api.ApiModels.Auth;
 using Timesheet.Presentation.Api.Common;
+using Timesheet.Presentation.Api.Models.Auth;
 
 namespace Timesheet.Presentation.Api.Controllers
 {
