@@ -101,10 +101,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\BaseTests.cs" />
     <Compile Include="Common\TestCategories.cs" />
+    <Compile Include="Infrastructure\TestDbContextFactory.cs" />
+    <Compile Include="Infrastructure\TestDbInitializer.cs" />
+    <Compile Include="Infrastructure\TestDbManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Specs.Api\Auth\LoginFeature.Steps.cs" />
-    <Compile Include="Specs.Api\Auth\LoginFeature.cs" />
+    <Compile Include="Unit.Api\Controllers\AuthControllerTests.Steps.cs" />
     <Compile Include="Unit.Api\Controllers\AuthControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,7 +118,10 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Infrastructure\Factories\" />
+    <Folder Include="Infrastructure\Migrations\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
